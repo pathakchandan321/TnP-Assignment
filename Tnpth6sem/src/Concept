@@ -1,0 +1,32 @@
+Map is an interface implemented by many of class
+-->HashMap..(unorderd)
+
+-->LinkedHashMap..(ordered)
+-->TreeMap..(sorted order)
+
+                               ====SETS====
+  PROPERTIES
+  -->Unique
+  -->No duplicates
+  -->Non repeating
+  (It also emplimentes array of linked list
+
+    ITERATION
+       iterate using Iterator interface
+
+                              ===Time Complexity===
+               relation b/w input and operation
+                    input::operation
+  DEFINITION:-
+
+  for(int i=0;i<n;i++){      i=0   .....n
+     for(int j=i+1;j<n;j++){  j execute n-1 times
+         sout();
+
+         }
+  }
+     for each i ,j executes n time
+     j=1+2+3+4+.....+n-1;
+     n(n-1)/2
+     (n^2-n)/2
+     O(n2);

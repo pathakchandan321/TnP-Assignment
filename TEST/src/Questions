@@ -1,0 +1,12 @@
+1.Array Rotation Without Extra Space
+2.Odd digit sum
+3.Character Frequency sort
+4.Matrix Diagonal Pattern Check
+5.create class product with private fields : id,name,price and quantity.
+    Add method to:
+      update quary(add/remove stock)
+      Apply discount if total value of stock(price*quantity)>50000
+      print product details
+        creeate multiple product in an array and find the product with meximum valuue stock
+
+        sushilt@lnct.ac.in

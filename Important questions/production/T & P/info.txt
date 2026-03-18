@@ -1,0 +1,4 @@
+Name: Aman 
+Salary:200k
+Name: Rohit 
+Salary: 35k

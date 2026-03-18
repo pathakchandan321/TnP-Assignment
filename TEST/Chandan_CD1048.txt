@@ -1,0 +1,69 @@
+Question 1.
+
+import java.util.Scanner;
+
+public class ArrayRotation {
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5};
+        int n=arr.length;
+        int d;   //this variable use to state that from where we need to rotate the array
+        Scanner in=new Scanner(System.in);
+        d=in.nextInt();
+        int j=n-1;      //use two pointer approach to solve the problem without using extra space
+        for(int i=0;i<=d;i++){  //swape the elements one by one
+           int temp=arr[i];
+           arr[i]=arr[j];
+           arr[j]=temp;
+           j--;
+        }
+        System.out.println("after rotation");
+        for(int i=0;i<n;i++){    //print the rotated array
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+
+Question 2.
+
+public class OddDigitSum {
+    public static void main(String[] args) {
+        int arr[]={12,45,22};
+        for(int i=0;i<arr.length;i++){
+            int sum=0;
+            int x=arr[i];      //taking each elements one by one
+            while(x != 0){     //extracting each digit of that element and find the sum of its digit
+                int a=x%10;
+                sum=sum+a;
+                x=x/10;
+            }
+            if(sum%2 != 0){   //check the condition that the sum is even or odd
+                System.out.println(arr[i]);  //if sum is odd we can print it
+            }
+        }
+    }
+}
+
+
+question 3.
+
+public class MatrixDiagonalPattern {
+    public static void main(String[] args) {
+        int n=3;
+        int arr[][]={{1,2,1},{2,1,5},{1,6,1}};
+        int count=0;
+        for(int i=0;i<n;i++){
+            int temp=arr[i][i];    //find the primary diagonal (this method minimize the complexity)
+            int temp1=arr[i][n-(i+1)];  //find secondary diagonal
+            if(temp==temp1){        //check the condition that the primary and secondary diagonal are same or  not
+                count++;    //increase the counting if same to trace the equality
+            }
+        }
+        if(count==3){   //since I create n*n matrix diagonal size must be n
+            System.out.println("matched");
+        }else{
+            System.out.println("not matched");
+        }
+    }
+}
+
